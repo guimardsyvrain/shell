@@ -46,8 +46,11 @@ mkdir data/processed/server_logs data/processed/user_logs data/processed/event_l
 cp data/raw/server_log_* data/processed/server_logs
 
 # 6. Repeat the above step for user logs and event logs
+# user logs case
 cp data/raw/user_log_* data/processed/user_logs 
-cp data/raw/user_ipaddr_* data/processed/user_logs   
+cp data/raw/user_ipaddr_* data/processed/user_logs  
+
+# event logs case
 cp data/raw/event_log_* data/processed/event_logs
 
 # 7. For user privacy, remove all files containing IP addresses (files with "ipaddr" in the filename) from ./data/raw and ./data/processed/user_logs
